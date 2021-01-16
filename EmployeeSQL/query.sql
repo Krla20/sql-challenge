@@ -47,5 +47,68 @@ ON dm.emp_no = emp.emp_no
 
 SELECT * FROM employees
 -- emp.emp_no*, emp.last_name, emp.first_name,
+SELECT * FROM dept_emp
+-- de.emp_no*, de.dept_no
 SELECT * FROM departments
 -- deps.dept_no*, deps.dept_name
+
+SELECT emp.emp_no, emp.last_name, emp.first_name, deps.dept_name
+FROM employees AS emp
+INNER JOIN dept_emp as de
+ON emp.emp_no = de.emp_no
+INNER JOIN departments as deps
+ON deps.dept_no = de.dept_no
+ORDER BY emp_no;
+
+
+-- 5. List first name, last name, and sex for employees whose first name is "Hercules" and last names begin with "B."
+
+SELECT * FROM employees
+
+SELECT emp.first_name, emp.last_name, emp.sex
+FROM employees as emp
+WHERE first_name = 'Hercules' AND last_name LIKE 'H%'
+
+
+-- 6. List all employees in the Sales department, including their employee number, last name, first name, and department name.
+
+SELECT * FROM employees
+-- emp.emp_no*, emp.last_name, emp.first_name,
+SELECT * FROM dept_emp
+-- de.emp_no*, de.dept_no
+SELECT * FROM departments
+-- deps.dept_no*, deps.dept_name
+
+SELECT emp.emp_no, emp.last_name, emp.first_name, deps.dept_name
+FROM employees as emp
+LEFT JOIN dept_emp as de
+ON emp.emp_no = de.emp_no
+INNER JOIN departments as deps
+ON deps.dept_no = de.dept_no
+WHERE deps.dept_name = 'Sales'
+
+-- 7. List all employees in the Sales and Development departments, including
+-- their employee number, last name, first name, and department name.
+
+SELECT * FROM departments
+-- deps.dept_no*, deps.dept_name
+SELECT * FROM employees
+-- emp.emp_no*, emp.last_name, emp.first_name,
+SELECT * FROM dept_emp
+-- de.emp_no*, de.dept_no
+
+SELECT emp.emp_no, emp.last_name, emp.first_name, deps.dept_name
+FROM employees as emp
+LEFT JOIN dept_emp as de
+ON emp.emp_no = de.emp_no
+INNER JOIN departments as deps
+ON deps.dept_no = de.dept_no
+WHERE deps.dept_name IN ('Sales', 'Development')
+
+-- 8. In descending order, list the frequency count of employee last names, i.e., how many employees share each last name.
+
+SELECT emp.last_name, 
+COUNT(*) AS freq_count
+FROM employees AS emp
+GROUP BY last_name
+ORDER BY freq_count DESC;

@@ -5,7 +5,7 @@ DROP TABLE IF EXISTS departments;
 DROP TABLE IF EXISTS titles;
 -- DROP TABLE employees CASCADE;
 DROP TABLE IF EXISTS employees;
-DROP TABLE employees CASCADE;
+-- DROP TABLE employees CASCADE;
 DROP TABLE IF EXISTS dept_emp;
 -- DROP TABLE dept_emp CASCADE;
 DROP TABLE IF EXISTS dept_manager;
