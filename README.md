@@ -3,10 +3,10 @@
 # SQL-CHALLENGE
 
 ## ERD Diagram
-    https://github.com/Krla20/sql-challenge/blob/main/EmployeeSQL/ERD_SQL_Challenge.png
+   - https://github.com/Krla20/sql-challenge/blob/main/EmployeeSQL/ERD_SQL_Challenge.png
 
     Schema: 
-        https://github.com/Krla20/sql-challenge/blob/main/EmployeeSQL/schema.sql
+   - https://github.com/Krla20/sql-challenge/blob/main/EmployeeSQL/schema.sql
     
 ## Data Analysis
 https://github.com/Krla20/sql-challenge/blob/main/EmployeeSQL/query.sql
@@ -27,7 +27,7 @@ https://github.com/Krla20/sql-challenge/blob/main/EmployeeSQL/query.sql
 https://github.com/Krla20/sql-challenge/blob/main/EmployeeSQL/sql_bonus-Copy1.ipynb
 
 2. Histogram to visualize the most common salary ranges for employees.
-  - The the most common salary is between USD $40,000 and USD $50,000
+  - The the most common salary is between USD $40,000 and USD $50,000 yearly
 ![alt_text](https://github.com/Krla20/sql-challenge/blob/main/EmployeeSQL/Images/Most_Common_Salary.png)
 
 3. Bar chart of average salary by title.
