@@ -3,9 +3,11 @@
 # SQL-CHALLENGE
 
 ## ERD Diagram
+   
    - https://github.com/Krla20/sql-challenge/blob/main/EmployeeSQL/ERD_SQL_Challenge.png
 
  Schema: 
+   
    - https://github.com/Krla20/sql-challenge/blob/main/EmployeeSQL/schema.sql
     
 ## Data Analysis
@@ -19,13 +21,13 @@
 7. List all employees in the Sales and Development departments, including their employee number, last name, first name, and department name.
 8. In descending order, list the frequency count of employee last names.
 
-   - https://github.com/Krla20/sql-challenge/blob/main/EmployeeSQL/query.sql
+  - https://github.com/Krla20/sql-challenge/blob/main/EmployeeSQL/query.sql
 
 ## Bonus (Optional)
 
 1. Import the SQL database into Pandas.
 
-   - https://github.com/Krla20/sql-challenge/blob/main/EmployeeSQL/sql_bonus-Copy1.ipynb
+  - https://github.com/Krla20/sql-challenge/blob/main/EmployeeSQL/sql_bonus-Copy1.ipynb
 
 2. Histogram to visualize the most common salary ranges for employees.
   - The the most common salary is between USD $40,000 and USD $50,000 yearly
