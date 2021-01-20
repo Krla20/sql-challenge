@@ -4,11 +4,11 @@
 
 ## ERD Diagram
    
-   - https://github.com/Krla20/sql-challenge/blob/main/EmployeeSQL/ERD_SQL_Challenge.png
+    - https://github.com/Krla20/sql-challenge/blob/main/EmployeeSQL/ERD_SQL_Challenge.png
 
-    Schema: 
+   Schema: 
    
-   - https://github.com/Krla20/sql-challenge/blob/main/EmployeeSQL/schema.sql
+    - https://github.com/Krla20/sql-challenge/blob/main/EmployeeSQL/schema.sql
     
 ## Data Analysis
 
